@@ -93,8 +93,8 @@ export default {
       const repoData: RepoContents = await response.json();
 
       // Filter for markdown files only
-      const mdFiles = Object.keys(repoData.files).filter((path) =>
-        path.endsWith(".md"),
+      const mdFiles = Object.keys(repoData.files).filter(
+        (path) => path.endsWith(".md") || path.endsWith(".mdx"),
       );
 
       // Filter out markdown files at the root level
