@@ -1,0 +1,6 @@
+name = "github-blog-worker"
+main = "main.ts"
+compatibility_date = "2025-02-25"
+dev.port = 3000
+route.custom_domain = true
+route.pattern = "blog.forgithub.com"
